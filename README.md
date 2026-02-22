@@ -26,13 +26,6 @@ Hard-to-debug production failures
 
 Pydantic introduces explicit data contracts using Python type hints.
 
-🧠 What This Repo Covers
-
-Basic usage of:
-
-from pydantic import BaseModel, Field
-from typing import List, Dict, Optional, Annotated
-
 Concepts explored:
 
 BaseModel for schema definition
@@ -46,17 +39,6 @@ Default values
 Type enforcement and validation errors
 
 Simple model instantiation & parsing
-
-🔎 Example Concept
-
-Defining structured input instead of raw dictionaries:
-
-class Patient(BaseModel):
-name: str = Field(max_length=50)
-age: int = Field(gt=0, lt=100)
-weight: float = Field(gt=0)
-married: bool = False
-allergies: Optional[List[str]] = None
 
 This ensures:
 
